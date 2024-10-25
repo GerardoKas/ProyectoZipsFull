@@ -1,0 +1,28 @@
+PROCESO ORDENADO DEL PROYEcTO ZIPS  con SUS INPUTS Y OUTPUTS
+
+-listar zips-> (DIR /S/B)
+	datos:
+	out:	ficheroListado.txt
+	in:	DIR//rutaParaBuscar
+
+-Comprobar Nuevos->(java)
+	datos:
+	in: ficheroListado.txt
+	in ficheroRepositorio.txt
+
+-listar contenido zips->(cmd+7z)
+	datos:
+	in:	ficheroListado.txt
+	out:	ficheroListadoFullContenidos.txt
+
+-parsear con java->
+	datos:
+	in:	ficheroListadoContenidos.txt
+	in:	rutaSevenZip
+	in:	rutaDatabase
+-visor->
+	datos:
+	in:	rutaDatabase
+	in:	rutaSevenZip
+	in:	DIR//rutaFicherosTemporal
+
